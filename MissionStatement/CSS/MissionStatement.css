@@ -1,0 +1,69 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    font-family: "Times New Roman", serif;
+}
+
+.page {
+    width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 60px 70px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #2b5dab;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.content {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.content em {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #2b5dab;
+    letter-spacing: 2px;
+}
+
+.footer span {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-top: -5px;
+}
+.img {
+    width: 75px;   /* adjust size */
+    height: auto;   /* keeps proportions */
+}
