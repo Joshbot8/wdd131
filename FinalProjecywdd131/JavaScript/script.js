@@ -102,7 +102,9 @@ function artworkTemplate(artwork, eager = false) {
             </model-viewer>
             `
         : `
-         <img src="${artwork.image}" alt="${artwork.name}"  ${eager ? 'fetchpriority="high"' : 'loading="lazy"'}  width="500" height="400">
+         <img src="${artwork.image}" alt="${artwork.name}" 
+         ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} 
+         width="500" height="400">
         `
     }
 
@@ -131,7 +133,7 @@ function artworkTemplate(artwork, eager = false) {
 
 
 // Displays artwork
-function renderArtwork(artwork, eager = false) {
+function renderArtwork(artList, eager = false) {
 
     // Load model-viewer if any artwork in this batch needs it
     if (artList.some(artwork => artwork.model)) {
@@ -141,7 +143,7 @@ function renderArtwork(artwork, eager = false) {
     const container = document.querySelector("#artwork-container");
 
     container.innerHTML = artList
-        .map(artwork => artworkTemplate(artwork))
+        .map(artwork => artworkTemplate(artwork, eager))
         .join("");
 }
 
