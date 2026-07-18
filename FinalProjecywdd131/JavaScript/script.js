@@ -208,7 +208,12 @@ document.addEventListener("click",(event)=>{
 
     if(event.target.classList.contains("star")){
 
-
+// CHECK: Is the user on the "Unfinished" page?
+        if (window.location.pathname.includes("app-plan.html")) {
+            alert("Voting is disabled for unfinished projects!");
+            return; // Stop the function here so no vote is recorded
+        }
+        
         const name = event.target.dataset.name;
 
         const score = Number(
