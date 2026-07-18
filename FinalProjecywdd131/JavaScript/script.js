@@ -22,11 +22,16 @@ function randomArtwork(artworkprojects) {
     return artworkprojects[index];
 }
 
+// Returns the correct storage key based on which page we're on
+function getStorageKey() {
+    const isUnfinishedPage = window.location.pathname.includes("app-plan.html");
+    return isUnfinishedPage ? "ratings-unfinished" : "ratings-finished";
+}
 
 // Saves ratings
 function saveRatings() {
     localStorage.setItem(
-        "ratings",
+        getStorageKey(),
         JSON.stringify(artworkprojects)
     );
 }
@@ -254,7 +259,7 @@ document.addEventListener("click",(event)=>{
 
 
 window.addEventListener("DOMContentLoaded", () => {
-    const saved = localStorage.getItem("ratings");
+    const saved = localStorage.getItem(getStorageKey());
     if (saved) {
         try {
             artworkprojects = JSON.parse(saved);
