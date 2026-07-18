@@ -34,20 +34,20 @@ function saveRatings() {
 
 // Builds the star rating
 function ratingTemplate(artwork) {
-
     let stars = "";
+    // Check if we are on the unfinished page
+    const isUnfinishedPage = window.location.pathname.includes("app-plan.html");
 
     for (let i = 1; i <= 5; i++) {
-
         stars += `
         <span 
-            class="star"
+            class="star ${isUnfinishedPage ? 'disabled-star' : ''}"
             data-name="${artwork.name}"
-            data-rating="${i}">
+            data-rating="${i}"
+            ${isUnfinishedPage ? 'style="cursor: default; opacity: 0.5;"' : ''}>
             ${i <= artwork.rating ? "⭐" : "☆"}
         </span>`;
     }
-
     return stars;
 }
 
