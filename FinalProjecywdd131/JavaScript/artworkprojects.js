@@ -6,7 +6,8 @@
         name: 'Glamrock DJ MusicMan',
         prepTime: '2 days',
         rating: 0,
-        votes: 0
+        votes: 0,
+        status: "finished"
     },
     {
         tags: ['StarWars', 'Custom Oc', 'Droid'],
@@ -15,7 +16,8 @@
         name: 'C1-0j1',
         prepTime: '5 days',
         rating: 0,
-        votes: 0
+        votes: 0,
+        status: "finished"
     },
     {
         tags: ["Transformers", "Dinobot", "Grimlock"],
@@ -25,37 +27,25 @@
         name: "Grimlock",
         timeSpent: "2 weeks",
         rating: 0,
-        votes: 0
-    }
-    ]
-unfinishedartworkprojects = [
+        votes: 0,
+        status: "finished"
+    },
     {
         tags: ['Five Nights at Freddys', 'Custom Oc', 'Animatronic'],
-        description: 'A Fnaf character of my own creation, Most commonly known on the VRC platform',
-        image: 'FinalProjectImage/image-195.webp',
-        name: 'Glamrock DJ MusicMan',
+        description: 'Test',
+        image: 'FinalProjectImage/image-173.png',
+        name: 'Glamrock DJ MusicMan WIP',
         prepTime: '2 days',
-        rating: 0,
-        votes: 0
+        status: "unfinished"
     },
     {
-        tags: ['StarWars', 'Custom Oc', 'Droid'],
-        description: 'A Droid Based off of a C1 Seriese Astromech from the Starwars Franchise',
-        image: 'FinalProjectImage/image-9(1).webp',
-        name: 'C1-0j1',
-        prepTime: '5 days',
-        rating: 0,
-        votes: 0
-    },
-    {
-        tags: ["Transformers", "Dinobot", "Grimlock"],
-        description: "3D model of Grimlock in his dinosaur form.",
+        tags: ["Bionicle", "Insect", "Elemental Creature"],
+        description: "3D model of a jungle creature from BIONICLE",
         image: "./FinalProjectImage/Neon.webp",
-        model: "./models/Grimlock.glb",
-        name: "Grimlock",
+        model: "./models/JungleCreature.glb",
+        name: "Unfinished Jungle Creature",
         timeSpent: "2 weeks",
-        rating: 0,
-        votes: 0
+        status: "unfinished"
     }
 ]
     
