@@ -5,8 +5,7 @@
         image: 'FinalProjectImage/image-173.png',
         name: 'Glamrock DJ MusicMan WIP',
         prepTime: '2 days',
-        rating: 0,
-        votes: 0
+        
     },
     {
         tags: ["Bionicle", "Insect", "Elemental Creature"],
@@ -15,7 +14,6 @@
         model: "./models/JungleCreature.glb",
         name: "Unfinished Jungle Creature",
         timeSpent: "2 weeks",
-        rating: 0,
-        votes: 0
+        
     }
 ]
